@@ -22,7 +22,7 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 	<link href="css/tiny-slider.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-	<title>Produk Dan Layanan - Dream Planet</title>
+	<title>Booking (Reservasi) - Dream Planet</title>
 </head>
 
 <body>
@@ -40,11 +40,11 @@
 			<div class="collapse navbar-collapse" id="navbarsFurni">
 				<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
 					<li><a class="nav-link" href="index.html">Home</a></li>
-					<li class="nav-item active">
-						<a class="nav-link" href="shop.html">Produk dan Layanan</a>
-					</li>
+					<li><a class="nav-link" href="shop.html">Produk dan Layanan</a></li>
 					<li><a class="nav-link" href="about.html">Tentang Kami</a></li>
-					<li><a class="nav-link" href="booking.html">Booking</a></li>
+					<li class="nav-item active">
+						<a class="nav-link" href="booking.html">Booking</a>
+					</li>
 				</ul>
 
 				<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
@@ -63,7 +63,7 @@
 			<div class="row justify-content-between">
 				<div class="col-lg-5">
 					<div class="intro-excerpt">
-						<h1>Shop</h1>
+						<h1>Booking</h1>
 					</div>
 				</div>
 				<div class="col-lg-7">
@@ -73,55 +73,78 @@
 		</div>
 	</div>
 	<!-- End Hero Section -->
-
-
-
-	<div class="untree_co-section product-section before-footer-section">
+	<div class="untree_co-section">
 		<div class="container">
 			<div class="row">
+				<div class="col-md-12 mb-5 mb-md-0">
+					<h2 class="h3 mb-3 text-black text-center">Detail Booking</h2>
+					<form>
+						<div class="p-3 p-lg-5 border bg-white">
+							<div class="form-group row">
+								<div class="col-md-12">
+									<label for="nama" class="text-black">Nama Lengkap<span
+											class="text-danger">*</span></label>
+									<input type="text" class="form-control" id="nama" name="nama" required>
+								</div>
+							</div>
 
-				<!-- Start Column 1 -->
-				<div class="col-12 col-md-4 col-lg-4 mb-5">
-					<a class="product-item" href="booking.html">
-						<img src="img/Service1.jpg" class="img-fluid product-thumbnail">
-						<h3 class="product-title">Service Besar</h3>
-						<p>Layanan besar ini mencakup pemeriksaan menyeluruh dan perawatan berbagai komponen penting dalam kendaraan. Biasanya dilakukan setelah jarak tempuh tertentu atau pada interval waktu tertentu. Service besar melibatkan penggantian berbagai komponen, seperti oli mesin, filter udara, filter oli, serta pemeriksaan dan penggantian jika diperlukan pada sistem rem, sistem suspensi, dan sistem kelistrikan. Ini bertujuan untuk memastikan kinerja optimal dan keamanan kendaraan.</p>
-						
-						<span class="icon-cross">
-							<img src="images/cross.svg" class="img-fluid">
-						</span>
-					</a>
-				</div>
-				<!-- End Column 1 -->
+							<div class="form-group row">
+								<div class="col-md-12">
+									<label for="alamat" class="text-black">Alamat<span
+											class="text-danger">*</span></label>
+									<input type="text" class="form-control" id="alamat" name="alamat"
+										placeholder="Street address" required>
+								</div>
+							</div>
 
-				<!-- Start Column 2 -->
-				<div class="col-12 col-md-4 col-lg-4 mb-5">
-					<a class="product-item" href="booking.html">
-						<img src="img/service3.jpg" class="img-fluid product-thumbnail">
-						<h3 class="product-title">Service Kecil</h3>
-						<p>Layanan kecil ini merupakan pemeriksaan dan perawatan rutin kendaraan yang dilakukan pada interval lebih pendek dibandingkan dengan layanan besar. Layanan ini mencakup pemeriksaan dan penggantian minyak mesin, pemeriksaan filter udara, filter oli, serta pemeriksaan umum sistem-sistem kendaraan. Service kecil bertujuan untuk menjaga performa kendaraan, mencegah kerusakan lebih lanjut, dan memperpanjang umur pakai komponen.</p>
-						
-						<span class="icon-cross">
-							<img src="images/cross.svg" class="img-fluid">
-						</span>
-					</a>
-				</div>
-				<!-- End Column 2 -->
+							<div class="form-group row">
+								<div class="col-md-6">
+									<label for="c_email_address" class="text-black">Email Address <span
+											class="text-danger">*</span></label>
+									<input type="text" class="form-control" id="c_email_address" name="c_email_address" required>
+								</div>
+								<div class="col-md-6">
+									<label for="c_phone" class="text-black">Phone <span
+											class="text-danger">*</span></label>
+									<input type="text" class="form-control" id="c_phone" name="c_phone"
+										placeholder="Phone Number" required>
+								</div>
+							</div>
 
-				<!-- Start Column 3 -->
-				<div class="col-12 col-md-4 col-lg-4 mb-5">
-					<a class="product-item" href="booking.html">
-						<img src="img/Service2.jpg" class="img-fluid product-thumbnail">
-						<h3 class="product-title">Body Repair</h3>
-						<p>Layanan body repair melibatkan perbaikan dan perawatan pada bagian eksterior kendaraan yang mungkin mengalami kerusakan akibat kecelakaan, benturan, atau kerusakan lainnya. Ini mencakup perbaikan pada bodi mobil, cat, kaca, serta komponen eksterior lainnya. Body repair juga bisa melibatkan pekerjaan pengecatan dan penyetelan ulang agar kendaraan kembali ke kondisi estetik dan struktural semula. Layanan ini penting untuk menjaga nilai estetika dan keamanan kendaraan.</p>
-						
-						<span class="icon-cross">
-							<img src="images/cross.svg" class="img-fluid">
-						</span>
-					</a>
+							<div class="form-group row mb-2">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label for="jenisLayanan">Jenis Layanan:</label>
+										<select class="form-control" id="jenisLayanan" name="jenisLayanan"
+											aria-placeholder="Pilih Jenis Layanan">
+											<option value=""></option>
+											<option value="serviceBesar">Service Besar</option>
+											<option value="serviceKecil">Service Kecil</option>
+											<option value="bodyRepair">Body Repair</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="c_order_notes" class="text-black">Detail Booking</label>
+								<textarea name="c_order_notes" id="c_order_notes" cols="30" rows="5"
+									class="form-control" placeholder="Write your notes here..." required></textarea>
+							</div>
+							
+							<br>
+							<div class="form-group row mb-5">
+								<div class="form-group">
+									<button type="submit" class="btn btn-black btn-lg py-3 btn-block"
+										onclick="window.location='thankyou.html'">Place Order</button>
+								</div>
+							</div>
+
+						</div>
+					</form>
 				</div>
-				<!-- End Column 3 -->
 			</div>
+			<!-- </form> -->
 		</div>
 	</div>
 
@@ -165,7 +188,6 @@
 		</div>
 	</footer>
 	<!-- End Footer Section -->
-
 
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/tiny-slider.js"></script>

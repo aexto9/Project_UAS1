@@ -20,6 +20,8 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
+    <link rel="icon" href="../img/Logo1.png">
+
 </head>
 
 <body class="bg-gradient-primary">
@@ -35,7 +37,9 @@
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                            <div class="col-lg-6 d-none d-lg-block">
+                                <img src="../img/Bengkel2.jpeg" alt="" class="img-fluid">
+                            </div>
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
@@ -43,24 +47,32 @@
                                     </div>
                                     <form class="user">
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Enter Email Address...">
+                                            <input type="text" class="form-control form-control-user"
+                                                id="email" aria-describedby="emailHelp"
+                                                placeholder="Username" name="email">
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
+                                                id="password" placeholder="Password" name="password">
                                         </div>
-                                        <div class="form-group">
-                                            <div class="custom-control custom-checkbox small">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck">
-                                                <label class="custom-control-label" for="customCheck">Remember
-                                                    Me</label>
-                                            </div>
-                                        </div>
-                                        <a href="index.html" class="btn btn-primary btn-user btn-block">
-                                            Login
-                                        </a>
+
+                                        <script>
+                                            function loginUser() {
+                                                // Ambil nilai dari input username dan password
+                                                var username = document.getElementById('email').value;
+                                                var password = document.getElementById('password').value;
+                                    
+                                                // Cek kondisi login
+                                                if (username === 'admin' && password === 'admin') {
+                                                    alert('Login berhasil! Selamat datang ' + username);
+                                                    window.location.href = 'index.html';
+                                                } else {
+                                                    alert('Login gagal! Silakan periksa kembali username dan password.');
+                                                }
+                                            }
+                                        </script>
+
+                                        <button type="button" onclick="loginUser()" class="btn btn-primary btn-user btn-block">Login</button>
                                     </form>
                                     <hr>
                                     <div class="text-center">
